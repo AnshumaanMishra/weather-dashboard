@@ -100,11 +100,13 @@
         vertical-align: middle;
         background-color: #fff;
         border-radius: 5px;
+        filter: invert(1);
         transition: 0.2s;
+        /* transition: height 1s; */
     }
 
     #drop-down-icon:hover{
-        filter: invert();
+        filter: invert(0);
     }   
 
 }
