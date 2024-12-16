@@ -1,6 +1,8 @@
 .content{
     position: relative;
-    background-color: #ececec;
+    /* background-color: #ececec; */
+    background-color: rgb(46, 46, 46);
+    color: white;
     width: fit-content;
     padding: 1px 20px;
     border-radius: 20px;

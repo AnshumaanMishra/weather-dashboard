@@ -40,12 +40,26 @@ async function APICall(city){
         .then(response => response.json())
         .then((data) => {
             jsondata = data;
+            console.log(data);
+            changeTheme(data.current.is_day);
             update(data);
         })
         .catch(error => {
             erroralert(error);
             return;
         });
+    
+}
+
+function changeTheme(isDay){
+    if(isDay == 1){
+        weatherContent.style.backgroundColor = "#ececec";
+        weatherContent.style.color = "black";
+    }
+    else{
+        weatherContent.style.backgroundColor = "rgb(46, 46, 46)"
+        weatherContent.style.color = "lightgray";
+    }
 }
 
 function erroralert(error) {
