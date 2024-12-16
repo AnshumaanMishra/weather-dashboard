@@ -5,7 +5,6 @@ linksAlt.style.height = '0px';
 const links = document.getElementById('links-alt').children;
 
 function toggleMenu(){
-    // console.log(linksAlt.style.height);
     if(linksAlt.style.height=='0px'){
         document.getElementById('drop-down-icon').setAttribute('src', './resources/chev-up.png');
         linksAlt.style.height = '197px';

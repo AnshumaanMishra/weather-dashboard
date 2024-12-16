@@ -39,3 +39,17 @@ navigators[2].addEventListener('click', () => {
     select(2);
     show(2);
 });
+
+document.getElementById("back-to-top").addEventListener('click', () => {
+    window.scrollTo()
+});
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 120 || document.documentElement.scrollTop > 120) {
+    document.getElementById('top').style.display = "block";
+  } else {
+    document.getElementById('top').style.display = "none";
+  }
+}

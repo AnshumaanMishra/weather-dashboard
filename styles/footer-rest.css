@@ -129,3 +129,26 @@
         border-right: none;
     }
 }
+
+
+#back-to-top{
+    height: 50px;
+    width: 50px;
+    transition: 0.15s;
+    margin: -5px;
+}
+
+#top{
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+#top:hover {
+    filter: invert(1);
+}
