@@ -1,0 +1,110 @@
+#content{
+    background-color: #ececec;
+    width: fit-content;
+    padding: 1px 25px 20px 10px;
+    border-radius: 20px;
+    margin: auto;
+    box-shadow: 0 0 10px gray;
+}
+
+#city-details{
+    margin-top: 30px;
+    text-align: center;
+}
+
+#name{
+    font-family: Roboto;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+#date {
+    font-family: Roboto;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+#weather {
+    margin: 15px auto;
+    width: 40%;
+    min-width: 550px;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+#basic-weather{
+    text-align: center;
+    padding: 10px 0px;
+    font-size: 1.5rem;
+}
+
+#condition{
+    font-size: 1rem;
+    margin-top: -10px;
+}
+
+#additional-weather > div {
+    /* border: 1px solid black; */
+    padding: 0px 10px;
+}
+
+#additional-weather {
+    padding: 20px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#icon{
+    margin-top: 0px;
+    width: 60px;
+    vertical-align: middle;
+    /* margin: auto; */
+}
+
+
+.data{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 6px;
+    border-bottom: 2px solid gray;
+}
+
+#feels-like{
+    margin-top: -11px;
+}
+
+.large-heading {
+    font-weight: 500;
+    margin-bottom: 8px;
+    display: inline-block;
+    text-align: left;
+    font-size: 1rem;
+}
+
+#right-pane > .large-heading {
+    padding-bottom: 8px;
+    border-bottom: 2px solid gray;
+}
+
+.large-value{
+    display: inline-block;
+    text-align: right;
+    font-size: 1rem;
+}
+
+.medium-heading{
+    display: inline-block;
+    text-align: left;
+    font-size: 0.8rem;
+}
+.medium-value{
+    display: inline-block;
+    font-size: 0.8rem;
+    text-align: right;
+}
+
+.small {
+    margin-left: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1.5px solid gray;
+}

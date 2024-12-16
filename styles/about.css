@@ -1,0 +1,21 @@
+#about {
+    /* background-color: rgb(167, 166, 166); */
+    background-image: linear-gradient(rgb(167, 166, 166), gray);
+    margin-top: 50px;
+    text-align: center;
+    padding: 20px;
+    width: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 300px;
+}
+
+#about-text {
+    text-align: left;
+}
+
+.about-image {
+    margin-top: 20px;
+    filter: grayscale(0.8);
+    width: 80%;
+    border-radius: 50%;
+}

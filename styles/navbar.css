@@ -1,0 +1,30 @@
+.navbar {
+    position: fixed;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 50px;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+}
+
+.navbar-element{
+    margin: 0;
+    padding: 8px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.navbar > a{
+    width: 100%;
+    margin: auto;
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.2s;
+}
+
+.navbar > a:hover{
+    background-color: gray;
+}
+

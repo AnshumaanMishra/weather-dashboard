@@ -1,0 +1,45 @@
+
+.search {
+    margin: 10px;
+    margin-top: 60px;
+    text-align: center;
+}
+
+.search > div{
+    display: inline-block;
+}
+
+.sbox{
+    width: 50%;
+}
+
+#search-box {
+    vertical-align: middle;
+    margin: 10px 2.5px;
+    height: 30px;
+    width: 89%;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 30px;
+}
+
+#search-box:focus{
+    box-shadow: 0px 0px 10px gray ;
+}
+.sicon{
+    border-radius: 35px;
+}
+
+#search-icon {
+    margin: 5px 2.5px;
+    vertical-align: middle;
+    height: 30px;
+    width: 35px;
+    cursor: pointer;
+}
+
+.sicon:hover{
+    /* color: blue; */
+    filter: invert();
+    background-color: white;
+}
