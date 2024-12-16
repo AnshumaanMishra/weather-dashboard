@@ -109,7 +109,7 @@
     border-bottom: 1.5px solid gray;
 }
 
-@media (max-width: 250px){
+@media (max-width: 280px){
     #content{
         background-color: #ececec;
         width: 100%;
@@ -132,7 +132,7 @@
     }    
 }
 
-@media (max-width: 700px) and (min-width: 250px) {
+@media (max-width: 700px) and (min-width: 280px) {
     #content{
         background-color: #ececec;
         width: 100%;
@@ -145,7 +145,7 @@
 
     #additional-weather {
         /* width: 100%; */
-        padding: 20px 0px;
+        padding: 20px 0px 40px 0px;
         display: block;
     }    
     #weather {
@@ -154,5 +154,6 @@
         min-width: 0px;
         display: grid;
         grid-template-columns: 1fr 5fr;
+        column-gap: 10px;
     }
 }

@@ -40,11 +40,11 @@ function update(jsondata) {
 
 const search = document.getElementsByClassName('sicon')[0];
 
-search.addEventListener('click', () => {
+search.addEventListener('click', async () => {
     var city = document.getElementById('search-box').value;
     console.log("Hello " + city);
-    let jsondata;
-    fetch("https://api.weatherapi.com/v1/forecast.json?key=f0450e703e924000a7a64512241612&q=" + city + "&days=1&aqi=yes&alerts=yes")
+    
+    await fetch("https://api.weatherapi.com/v1/forecast.json?key=f0450e703e924000a7a64512241612&q=" + city + "&days=1&aqi=yes&alerts=yes")
         .then(response => response.json())
         .then((data) => {
             console.log(data);

@@ -10,6 +10,7 @@
 }
 
 .sbox{
+    text-align: center;
     width: 400px;
 }
 
@@ -45,14 +46,14 @@
     background-color: white;
 }
 
-@media (max-width: 250px){
+@media (max-width: 400px){
     .search {
         display: grid;
         grid-template-columns: 1fr 50px;
     }   
 
     .sbox {
-        width: 75%;
+        width: 85%;
     }
 
     .sicon {
@@ -62,14 +63,15 @@
     }
 }
 
-@media (max-width: 700px) and (min-width: 250px){
+@media (max-width: 700px) and (min-width: 400px){
     .search {
         display: grid;
         grid-template-columns: 1fr 50px;
     }   
 
     .sbox {
-        width: 100%;
+        width: 85%;
+        text-align: center;
     }
 
     .sicon {

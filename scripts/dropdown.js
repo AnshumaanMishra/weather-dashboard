@@ -1,8 +1,8 @@
-const dropDown = document.getElementById('drop-down');
+const dropDown = document.getElementById('drop-down-icon');
 
 const linksAlt = document.getElementById('links-alt');
 
-const [search, weather, about, footer] = document.getElementById('links-alt').children;
+const [searchI, weather, about, footer] = document.getElementById('links-alt').children;
 
 function toggleMenu(){
     if(linksAlt.style.height=='0px'){
@@ -17,7 +17,7 @@ dropDown.addEventListener('click', () => {
     toggleMenu();
 });
 
-search.addEventListener('click', () => {
+searchI.addEventListener('click', () => {
     toggleMenu();
     document.getElementById('#search').scrollIntoView();
 });
