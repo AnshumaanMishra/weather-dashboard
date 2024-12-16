@@ -17,27 +17,55 @@
 </head>
 <body>
     <div class="navbar">
-        <a href="#search">
-            <div class="navbar-element">
-                Search
-            </div>
-        </a>
-        
-        <a href="#content">
-            <div class="navbar-element">
-                Weather
-            </div>
-        </a>
-        <a href="#about">
-            <div class="navbar-element">
-                About
-            </div>
-        </a>
-        <a href="#footer">
-            <div class="navbar-element">
-                Footer
-            </div>
-        </a>
+        <div class="links">
+            <a href="#search">
+                <div class="navbar-element">
+                    Search
+                </div>
+            </a>
+            
+            <a href="#content">
+                <div class="navbar-element">
+                    Weather
+                </div>
+            </a>
+            <a href="#about">
+                <div class="navbar-element">
+                    About
+                </div>
+            </a>
+            <a href="#footer">
+                <div class="navbar-element">
+                    Footer
+                </div>
+            </a>
+        </div>
+        <div id="drop-down">
+            <img src="/resources/dropdown.png" alt="" id="drop-down-icon">
+        </div>
+        <div id="links-alt">
+            <a href="#search">
+                <div class="navbar-element-alt">
+                    Search
+                </div>
+            </a>
+            
+            <a href="#content">
+                <div class="navbar-element-alt">
+                    Weather
+                </div>
+            </a>
+            <a href="#about">
+                <div class="navbar-element-alt">
+                    About
+                </div>
+            </a>
+            <a href="#footer">
+                <div class="navbar-element-alt">
+                    Footer
+                </div>
+            </a>
+        </div>
     </div>
     <div id="main-page">
         <div class="search" id="search">
@@ -124,11 +152,10 @@
                 <div class="left-pane">
                     <div class="selected">Credits</div>
                     <div class="not-selected">Privacy Policy</div>
-                    <div class="not-selected">Terms and Conditions</div>
-                </div>
-                <div class="right-pane">
+                    <div class="not-selected">T&C</div>
+                </div><div class="right-pane">
                     <div id="credits">
-                        <div class="heading">Credits:</div class="heading`">
+                        <div class="heading">Credits:</div>
                         Icons provided by <a target="_blank" href="https://icons8.com">Icons8</a>
                         <br>
                         All media used by this website is owned by the creator unless specified otherwise. <br>
@@ -152,5 +179,6 @@
     </div>
 </body>
 <script src="./scripts/details.js"></script>
+<script src="./scripts/dropdown.js"></script>
 <script src="./scripts/footer.js"></script>
 </html>

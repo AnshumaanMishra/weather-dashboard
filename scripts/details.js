@@ -40,18 +40,18 @@ function update(jsondata) {
 
 const search = document.getElementsByClassName('sicon')[0];
 
-search.addEventListener('click', async () => {
+search.addEventListener('click', () => {
     var city = document.getElementById('search-box').value;
     console.log("Hello " + city);
     let jsondata;
-    await fetch("https://api.weatherapi.com/v1/forecast.json?key=f0450e703e924000a7a64512241612&q=" + city + "&days=1&aqi=yes&alerts=yes")
+    fetch("https://api.weatherapi.com/v1/forecast.json?key=f0450e703e924000a7a64512241612&q=" + city + "&days=1&aqi=yes&alerts=yes")
         .then(response => response.json())
         .then((data) => {
             console.log(data);
-            jsondata = data
+            update(data);
         })
         .catch(error => console.log("Error : " + error));
     weatherContent.classList.remove("hidden");
     // console.log('jsondata = ' + jsondata.location.name);
-    update(jsondata);
+    // update(jsondata);
 });

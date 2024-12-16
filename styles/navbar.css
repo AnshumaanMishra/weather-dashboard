@@ -1,4 +1,5 @@
-.navbar {
+.links{
+    z-index: 10;
     position: fixed;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -16,7 +17,7 @@
     text-align: center;
 }
 
-.navbar > a{
+.links > a{
     width: 100%;
     margin: auto;
     text-decoration: none;
@@ -24,7 +25,86 @@
     transition: background-color 0.2s;
 }
 
-.navbar > a:hover{
+.links > a:hover{
     background-color: gray;
 }
 
+#drop-down {
+    cursor: pointer;
+    display: none;
+}
+
+#links-alt {
+    border: 1px solid black;
+    display: block;
+    z-index: 10;
+    position: fixed;
+    height: 0px;
+    /* height: 197px; */
+    top: 50px;
+    left: 0;
+    right: 0;
+    background-color: lightgray;
+    text-align: right;
+    overflow: hidden;
+    transition: height 0.3s;
+}
+
+#links-alt > a{
+    width: 100%;
+    margin: auto;
+    text-decoration: none;
+    color: black;
+    transition: background-color 0.2s;
+}
+
+#links-alt > a:hover{
+    background-color: gray;
+}
+
+.navbar-element-alt{
+    margin: 0;
+    padding: 8px;
+    font-size: 1.5rem;
+    text-align: center;
+    border-bottom: 2px solid black;
+    transition: background-color 0.15s;
+}
+
+.navbar-element-alt:hover{
+    background-color: #fff;
+}
+
+@media (max-width: 700px) {
+    .links {
+        display: none;
+    }
+    #drop-down{
+        display: block;
+        z-index: 10;
+        position: fixed;
+        /* display: grid; */
+        /* grid-template-c/olumns: 1fr 1fr 1fr 1fr; */
+        height: 50px;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: black;
+        text-align: right;
+        /* border-radius: 5px; */
+    }
+
+    #drop-down-icon {
+        height: 30px;
+        margin: 10px 10px;
+        vertical-align: middle;
+        background-color: #fff;
+        border-radius: 5px;
+        transition: 0.2s;
+    }
+
+    #drop-down-icon:hover{
+        filter: invert();
+    }   
+
+}

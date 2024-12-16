@@ -1,7 +1,7 @@
 #content{
     background-color: #ececec;
     width: fit-content;
-    padding: 1px 25px 20px 10px;
+    padding: 1px 20px;
     border-radius: 20px;
     margin: auto;
     box-shadow: 0 0 10px gray;
@@ -107,4 +107,52 @@
     margin-left: 10px;
     padding-bottom: 5px;
     border-bottom: 1.5px solid gray;
+}
+
+@media (max-width: 250px){
+    #content{
+        background-color: #ececec;
+        width: 100%;
+        padding: 1px 0;
+        /* padding: 1px 30px 20px 0px; */
+        border-radius: 0px;
+        margin: auto;
+        box-shadow: 0 0 10px gray;
+    }
+    #weather {
+        margin: 15px auto;
+        width: 100%;
+        min-width: 0px;
+        display: block;
+    }
+    #additional-weather {
+        width: 100%;
+        /* padding: 20px 0px; */
+        display: block;
+    }    
+}
+
+@media (max-width: 700px) and (min-width: 250px) {
+    #content{
+        background-color: #ececec;
+        width: 100%;
+        padding: 1px 0;
+        /* padding: 1px 30px 20px 0px; */
+        border-radius: 0px;
+        margin: auto;
+        box-shadow: 0 0 10px gray;
+    }
+
+    #additional-weather {
+        /* width: 100%; */
+        padding: 20px 0px;
+        display: block;
+    }    
+    #weather {
+        margin: 15px auto;
+        width: fit-content;
+        min-width: 0px;
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+    }
 }

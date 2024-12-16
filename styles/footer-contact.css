@@ -20,6 +20,7 @@
     vertical-align: middle;
     width: 35px;
     transition: 0.2s;
+    transition: 0.2s;
     border-radius: 5.5px;
 }
 
@@ -29,6 +30,7 @@
     vertical-align: middle;
     width: 40px;
     transition: 0.2s;
+    transition: 0.2s;
     border-radius: 50%;
 }
 
@@ -36,3 +38,4 @@
     background-color: white;
     filter: invert(1);
 }
+
