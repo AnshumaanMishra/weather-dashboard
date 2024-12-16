@@ -52,6 +52,4 @@ search.addEventListener('click', () => {
         })
         .catch(error => console.log("Error : " + error));
     weatherContent.classList.remove("hidden");
-    // console.log('jsondata = ' + jsondata.location.name);
-    // update(jsondata);
 });
