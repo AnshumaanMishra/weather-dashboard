@@ -77,60 +77,69 @@
                 <img src="./resources/search.svg" alt="" id="search-icon">
             </div>
         </div>
-        <div id="unit-toggle">
-            <div id="Mcircle" class="toggle">C</div>
-            <div id="Icircle" class="toggle hidden">F</div>
-        </div>
-        <div id="content" class="hidden">
-            <div id="city-details">
-                <!-- <div class="free-space"></div> -->
-                <div id="name"></div>
-                <div id="region"></div>
-                <div id="date"></div>
-                <div id="loc"></div>
-                <!-- <div class="free-space"></div> -->
+        <div class="toggles">
+            <div id="unit-toggle" class="toggle-back">
+                <div id="Mcircle" class="toggle">&deg;C</div>
+                <div id="Icircle" class="toggle hidden">&deg;F</div>
             </div>
-            <div id="weather">
-                <div id="basic-weather">
-                    <img src="" alt="" id="icon">
-                    <div id="condition"></div>
-                    <div id="temperature"></div>
-                    <div id="feels-like">
-                        <div class="medium-heading">Feel:</div>
+            <div id="data-toggle" class="toggle-back">
+                <div id="Dcircle" class="toggle">D</div>
+                <div id="Wcircle" class="toggle hidden">W</div>
+            </div>
+        </div>
+        <div id="content" class="hidden content">
+            <div id="navigator-L" class="navigator hidden"><img src="./resources/chev-left.png" alt="" id="nav-left"></div>
+            <div id="navigator-R" class="navigator hidden"><img src="./resources/chev-right.png" alt="" id="nav-right"></div>
+            <div id="city-details" class="city-details">
+                <div id="name" class="name"></div>
+                <div id="region" class="region"></div>
+                <div id="date" class="date"></div>
+            </div>
+            <div id="weather" class="weather">
+                <div id="basic-weather" class="basic-weather">
+                    <img src="" alt="" id="icon" class="icon">
+                    <div id="condition" class="condition"></div>
+                    <div id="temperature" class="temperature"></div>
+                    <div id="feels-like" class="feels-like">
+                        <div class="medium-heading"></div>
                         <div class="medium-value"></div>
                     </div>
                 </div>
-                <div id="additional-weather">
-                    <div id="left-pane">
-                        <div id="humidity" class="data">
-                            <div class="large-heading">Humidity:</div>
+                <div id="additional-weather" class="additional-weather">
+                    <div id="left-pane" class="left-pane-c">
+                        <div id="humidity" class="data humidity">
+                            <div class="large-heading"></div>
                             <div class="large-value"></div>
                         </div>
-                        <div id="atmospheric-pressure" class="data">
-                            <div class="large-heading">Pressure:</div>
+                        <div id="atmospheric-pressure" class="data atmospheric-pressure">
+                            <div class="large-heading"></div>
                             <div class="large-value"></div>
                         </div>
-                        <div id="precipitation" class="data">
-                            <div class="large-heading">Rainfall:</div>
+                        <div id="precipitation" class="data precipitation">
+                            <div class="large-heading"></div>
                             <div class="large-value"></div>
                         </div>
-                        <div id="visibility" class="data">
-                            <div class="large-heading">Visibility:</div>
+                        <div id="visibility" class="data visibility">
+                            <div class="large-heading"></div>
                             <div class="large-value"></div>
                         </div>
                     </div>
-                    <div id="right-pane">
-                        <div class="large-heading">Wind:</div>
-                        <div id="wind-speed" class="data small">
-                            <div class="medium-heading">Speed:</div>
+                    <div id="right-pane" class="right-pane-c">
+                        <div class="large-heading"></div>
+                        <div id="wind-speed" class="data small wind-speed">
+                            <div class="medium-heading"></div>
                             <div class="medium-value"></div>
                         </div>
-                        <div id="wind-direction" class="data small">
-                            <div class="medium-heading">Direction:</div>
+                        <div id="wind-direction" class="data small wind-direction">
+                            <div class="medium-heading"></div>
                             <div class="medium-value"></div>
                         </div>
-                        <div id="wind-degrees" class="data small">
-                            <div class="medium-heading">Degrees:</div>
+                        <div id="wind-degrees" class="data small wind-degrees">
+                            <div class="medium-heading"></div>
+                            <div class="medium-value"></div>
+                        </div>
+                        <div id="astro-container" class="data small hidden">
+                            <div class="medium-heading"></div>
                             <div class="medium-value"></div>
                         </div>
                     </div>

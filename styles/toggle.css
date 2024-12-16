@@ -1,4 +1,12 @@
-#unit-toggle {
+.toggles{
+    margin: 20px auto;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.toggle-back {
     width: 45px;
     height: 20px;
     margin: 0 auto;
@@ -25,12 +33,12 @@
     background-color: rgb(177, 174, 174);
 }
 
-#Mcircle{
+#Mcircle, #Dcircle{
     left: 0;
     top: -4px;
 }
 
-#Icircle{
+#Icircle, #Wcircle{
     left: 20px;
     top: -4px;
 }

@@ -1,12 +1,14 @@
 #about {
     /* background-color: rgb(167, 166, 166); */
+    box-shadow: 0 0 10px rgb(42, 42, 42);
     background-image: linear-gradient(rgb(167, 166, 166), gray);
-    margin-top: 50px;
+    margin-top: 20px;
     text-align: center;
     padding: 20px;
     width: fit-content;
     display: grid;
     grid-template-columns: 1fr 300px;
+    z-index: 5;
 }
 
 #about-text {
