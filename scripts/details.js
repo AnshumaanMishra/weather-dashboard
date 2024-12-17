@@ -40,7 +40,6 @@ async function APICall(city){
         .then(response => response.json())
         .then((data) => {
             jsondata = data;
-            console.log(data);
             changeTheme(data.current.is_day);
             update(data);
         })

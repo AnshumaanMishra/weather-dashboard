@@ -1,4 +1,4 @@
-.content{
+#content{
     position: relative;
     /* background-color: #ececec; */
     background-color: rgb(46, 46, 46);
@@ -11,24 +11,24 @@
     box-shadow: 0 0 10px gray;
 }
 
-.city-details{
+#city-details{
     margin-top: 30px;
     text-align: center;
 }
 
-.name{
+#name{
     font-family: Roboto;
     font-size: 2rem;
     font-weight: 500;
 }
 
-.date {
+#date {
     font-family: Roboto;
     font-size: 1.1rem;
     font-weight: 500;
 }
 
-.weather {
+#weather {
     margin: 15px auto;
     width: 40%;
     min-width: 550px;
@@ -36,29 +36,29 @@
     grid-template-columns: 1fr 4fr;
 }
 
-.basic-weather{
+#basic-weather{
     text-align: center;
     padding: 10px 0px;
     font-size: 1.5rem;
 }
 
-.condition{
+#condition{
     font-size: 1rem;
     margin-top: -10px;
 }
 
-.additional-weather > div {
+#additional-weather > div {
     /* border: 1px solid black; */
     padding: 0px 10px;
 }
 
-.additional-weather {
+#additional-weather {
     padding: 20px 0px;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
-.icon{
+#icon{
     margin-top: 0px;
     width: 60px;
     vertical-align: middle;
@@ -73,7 +73,7 @@
     border-bottom: 2px solid gray;
 }
 
-.feels-like{
+#feels-like{
     margin-top: -11px;
     padding: 0;
     color: red;
@@ -88,12 +88,12 @@
     font-size: 1rem;
 }
 
-.right-pane-c {
+#right-pane {
     display: grid;
     grid-template-rows: 1.5fr 1fr 1fr 1fr 1fr;
 }
 
-.right-pane-c > .large-heading {
+#right-pane > .large-heading {
     padding-bottom: 8px;
     border-bottom: 2px solid gray;
 }
@@ -160,7 +160,7 @@
 }
 
 @media (max-width: 500px){
-    .content{
+    #content{
         background-color: #ececec;
         width: 100%;
         padding: 1px 0;
@@ -169,13 +169,13 @@
         margin: auto;
         box-shadow: 0 0 10px gray;
     }
-    .weather {
+    #weather {
         margin: 15px auto;
         width: 100%;
         min-width: 0px;
         display: block;
     }
-    .additional-weather {
+    #additional-weather {
         width: 100%;
         /* padding: 20px 0px; */
         display: block;
@@ -204,7 +204,7 @@
 }
 
 @media (max-width: 700px) and (min-width: 500px) {
-    .content{
+    #content{
         background-color: #ececec;
         width: 100%;
         padding: 1px 0;
@@ -214,12 +214,12 @@
         box-shadow: 0 0 10px gray;
     }
 
-    .additional-weather {
+    #additional-weather {
         /* width: 100%; */
         padding: 20px 0px 40px 0px;
         display: block;
     }    
-    .weather {
+    #weather {
         margin: 15px auto;
         width: fit-content;
         min-width: 0px;
